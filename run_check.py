@@ -32,7 +32,7 @@ if os_type == 'Darwin':  # Mac OS
                 return "pass", True
             else:
                 return "fail", False
-        except subprocess.CalledProcessError:
+        except (subprocess.CalledProcessError, IndexError):
             return "fail", False
     
     def print_table_results(name, command, comparator=lambda x, y: True, required_value=None):
