@@ -31,8 +31,8 @@ The script will output the results of the system checks, displaying either 'pass
 
 Please note that the script must be run with administrative privileges to accurately check the system's hardware.
 
-For convenience, you can also run this script directly from the command line using the following one-liner command in your terminal window, or using the Command Prompt in Windows:
-```command -v python >/dev/null && curl -sSL https://raw.githubusercontent.com/learn-co-curriculum/cyberOSTest/main/run_check.py | python || command -v python3 >/dev/null && curl -sSL https://raw.githubusercontent.com/learn-co-curriculum/cyberOSTest/main/run_check.py | python3```
+For convenience, you can also run this script directly from the command line using the following one-liner command in your terminal window, or using PowerShell in Windows:
+```(curl -sSL https://raw.githubusercontent.com/learn-co-curriculum/cyberOSTest/main/run_check.py | python -) 2>/dev/null || (curl -sSL https://raw.githubusercontent.com/learn-co-curriculum/cyberOSTest/main/run_check.py | python3 -) 2>/dev/null```
 
 ## Support
 
