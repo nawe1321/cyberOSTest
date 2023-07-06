@@ -133,7 +133,7 @@ elif os_type == 'Linux':  # Linux
 
     # 4. 2GHz+ Processor
     
-    print_table_results("2GHz+ Processor", "cat /proc/cpuinfo | awk '/cpu MHz/'" | head -n 1, comparator=lambda x, y: float(x.split(':')[1].strip()) >= y, required_value=2000.0)  # Comparing in MHz
+    print_table_results("2GHz+ Processor", "cat /proc/cpuinfo | awk '/cpu MHz/' | head -n 1", comparator=lambda x, y: float(x.split(':')[1].strip()) >= y, required_value=2000.0)  # Comparing in MHz
     print_delimiter()
 
 else:
